@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        /* background image */
+        html{
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./images/leaves_green_bushes_130214_3840x2400.jpg) center fixed no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body> 
+    <div style="background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./images/leaves_green_bushes_130214_3840x2400.jpg) center fixed no-repeat;
+    background-size: cover;">
+    <header> 
+        <h1 class="text-white text-center p-5"> HOPING TO HELP YOU </h1>
+    </header>
+        <br><br>
+        <!-- search todo input -->
+        <div class="d-flex justify-content-center align-items-center">
+            <input type="search" class="form-control w-50" placeholder="Search for your todo... ">
+        </div>
+        <!-- container containg todo's -->
+        <div class="container card-body mt-5 bg-light border" style="z-index: 1;">
+            <h1 class="text-dark text-capitalize text-center" >~ Enter your todo ~</h1><br>
+            <!-- adding todo -->
+            <form action="/action_page.php" class="form-inline d-flex justify-content-center align-items-center" id="form">  
+                <input type="text" name="text" id="text" placeholder="enter here..." style="border: 1px solid rgb(223, 223, 223);padding: 5px;"> &nbsp;
+                <input type="submit" class="btn text-white ml-3" style="background-color: purple;">
+            </form>
+            <!-- todos inside ul as li's -->
+            <ul class="list-group mt-5" id="list">
+            </ul>
+        </div>
+    </div>
+    <script src="todo.js"></script>     
+</body>
+</html>
+
